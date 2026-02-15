@@ -14,6 +14,7 @@ nav{margin-top:8px}
 nav a{margin:0 10px;color:#555;text-decoration:none;font-size:15px}
 nav a:hover{color:#2d7d5a}
 
+/* 顶部轮播 */
 .banner{position:relative;width:100%;height:380px;overflow:hidden}
 .banner .wrap{width:300%;height:100%;display:flex;animation:slide 12s infinite linear}
 .banner .item{width:100%;height:100%;background-size:cover;background-position:center}
@@ -31,12 +32,14 @@ nav a:hover{color:#2d7d5a}
 .section h2{text-align:center;color:#2d7d5a;margin-bottom:24px;font-size:24px}
 .about{text-align:center;color:#666;max-width:700px;margin:0 auto}
 
+/* 房间卡片 */
 .room-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}
 @media(max-width:768px){.room-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:500px){.room-grid{grid-template-columns:1fr}}
 
 .room{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
 
+/* 房间内部轮播 */
 .room-slide{position:relative;width:100%;height:160px;overflow:hidden}
 .room-slide .room-wrap{width:300%;height:100%;display:flex;animation:roomSlide 12s infinite linear}
 .room-slide .room-item{width:100%;height:100%;background-size:cover;background-position:center}
@@ -66,24 +69,25 @@ footer{background:#2d7d5a;color:#fff;text-align:center;padding:30px 20px;margin-
 <header>
   <div class="logo">黎平瞰肇兴山水美宿</div>
   <nav>
-    <a href="#about">民宿简介</a>
-    <a href="#rooms">客房预订</a>
-    <a href="#food">私房菜</a>
-    <a href="#coffee">山顶咖啡</a>
-    <a href="#contact">联系我们</a>
+    <a href=" ">民宿简介</a >
+    <a href="#rooms">客房预订</a >
+    <a href="#food">私房菜</a >
+    <a href="#coffee">山顶咖啡</a >
+    <a href="#contact">联系我们</a >
   </nav>
 </header>
 
+<!-- 顶部轮播 -->
 <div class="banner">
   <div class="wrap">
-    <div class="item" style="background-image:url(https://s41.ax1x.com/2026/02/14/pZLAUA0.jpg)"></div>
-    <div class="item" style="background-image:url(https://s41.ax1x.com/2026/02/14/pZLAJns.jpg)"></div>
-    <div class="item" style="background-image:url(https://s41.ax1x.com/2026/02/14/pZLAB3F.jpg)"></div>
+    <div class="item" style="background-image:url('images/pZLAUA0.jpg')"></div>
+    <div class="item" style="background-image:url('images/pZLAJns.jpg')"></div>
+    <div class="item" style="background-image:url('images/pZLAB3F.jpg')"></div>
   </div>
   <div class="banner-text">
     <div>
       <h1>瞰肇兴全景 · 栖山水之间</h1>
-      <p>藏在山顶的清新美宿 · 看云海 · 望梯田</p>
+      <p>藏在山顶的清新美宿 · 看云海 · 望梯田</p >
     </div>
   </div>
 </div>
@@ -100,12 +104,13 @@ footer{background:#2d7d5a;color:#fff;text-align:center;padding:30px 20px;margin-
   <h2>客房预订</h2>
   <div class="room-grid">
 
+    <!-- 山景大床房 -->
     <div class="room">
       <div class="room-slide">
         <div class="room-wrap">
-          <div class="room-item" style="background-image:url(https://s41.ax1x.com/2026/02/14/pZLZMh6.jpg)"></div>
-          <div class="room-item" style="background-image:url(https://s41.ax1x.com/2026/02/14/pZLZKtx.jpg)"></div>
-          <div class="room-item" style="background-image:url(https://s41.ax1x.com/2026/02/14/pZLZuA1.jpg)"></div>
+          <div class="room-item" style="background-image:url('images/pZLZMh6.jpg')"></div>
+          <div class="room-item" style="background-image:url('images/pZLZKtx.jpg')"></div>
+          <div class="room-item" style="background-image:url('images/pZLZuA1.jpg')"></div>
         </div>
       </div>
       <div class="room-info">
@@ -113,16 +118,17 @@ footer{background:#2d7d5a;color:#fff;text-align:center;padding:30px 20px;margin-
         <div>数量：3间</div>
         <div class="room-price">¥588/晚</div>
         <div style="color:#2d7d5a">可预订</div>
-        <a class="btn">立即预订</a>
+        <a class="btn">立即预订</a >
       </div>
     </div>
 
+    <!-- 全景双床房 -->
     <div class="room">
       <div class="room-slide">
         <div class="room-wrap">
-          <div class="room-item" style="background-image:url(https://s41.ax1x.com/2026/02/14/pZLZeB9.jpg)"></div>
-          <div class="room-item" style="background-image:url(https://s41.ax1x.com/2026/02/14/pZLZZnJ.jpg)"></div>
-          <div class="room-item" style="background-image:url(https://s41.ax1x.com/2026/02/14/pZLVisH.jpg)"></div>
+          <div class="room-item" style="background-image:url('images/pZLZeB9.jpg')"></div>
+          <div class="room-item" style="background-image:url('images/pZLZZnJ.jpg')"></div>
+          <div class="room-item" style="background-image:url('images/pZLVisH.jpg')"></div>
         </div>
       </div>
       <div class="room-info">
@@ -130,16 +136,17 @@ footer{background:#2d7d5a;color:#fff;text-align:center;padding:30px 20px;margin-
         <div>数量：2间</div>
         <div class="room-price">¥598/晚</div>
         <div style="color:#2d7d5a">可预订</div>
-        <a class="btn">立即预订</a>
+        <a class="btn">立即预订</a >
       </div>
     </div>
 
+    <!-- 水岸家庭套房 -->
     <div class="room">
       <div class="room-slide">
         <div class="room-wrap">
-          <div class="room-item" style="background-image:url(https://s41.ax1x.com/2026/02/14/pZLV9zD.jpg)"></div>
-          <div class="room-item" style="background-image:url(https://s41.ax1x.com/2026/02/14/pZLEvIx.jpg)"></div>
-          <div class="room-item" style="background-image:url(https://s41.ax1x.com/2026/02/14/pZLEhaq.jpg)"></div>
+          <div class="room-item" style="background-image:url('images/pZLV9zD.jpg')"></div>
+          <div class="room-item" style="background-image:url('images/pZLEvIx.jpg')"></div>
+          <div class="room-item" style="background-image:url('images/pZLEhaq.jpg')"></div>
         </div>
       </div>
       <div class="room-info">
@@ -147,7 +154,7 @@ footer{background:#2d7d5a;color:#fff;text-align:center;padding:30px 20px;margin-
         <div>数量：1间</div>
         <div class="room-price">¥888/晚</div>
         <div style="color:#e63946">热门</div>
-        <a class="btn">立即预订</a>
+        <a class="btn">立即预订</a >
       </div>
     </div>
 
@@ -159,13 +166,13 @@ footer{background:#2d7d5a;color:#fff;text-align:center;padding:30px 20px;margin-
   <div class="dual">
     <div class="card">
       <h3>🏠 民宿私房菜</h3>
-      <p>本地食材 · 侗家风味</p>
-      <p>需提前1天预约</p>
+      <p>本地食材 · 侗家风味</p >
+      <p>需提前1天预约</p >
     </div>
     <div class="card" id="coffee">
       <h3>☕ 山顶咖啡店</h3>
-      <p>日出咖啡 · 观景下午茶</p>
-      <p>9:00-21:00</p>
+      <p>日出咖啡 · 观景下午茶</p >
+      <p>9:00-21:00</p >
     </div>
   </div>
 </section>
@@ -173,16 +180,17 @@ footer{background:#2d7d5a;color:#fff;text-align:center;padding:30px 20px;margin-
 <section class="section" id="contact">
   <h2>联系我们</h2>
   <div class="contact">
-    <p><strong>地址：</strong>贵州省黎平县肇兴镇山顶观景处</p>
-    <p><strong>管家微信：</strong> 19064898384</p>
-    <p><strong>老板微信：</strong> landscape-resort</p>
-    <p>24小时在线咨询</p>
+    <p><strong>地址：</strong>贵州省黎平县肇兴镇山顶观景处</p >
+    <p><strong>管家微信：</strong> 19064898384</p >
+    <p><strong>老板微信：</strong> landscape-resort</p >
+    <p>24小时在线咨询</p >
   </div>
 </section>
 
 <footer>
-  <p>黎平瞰肇兴山水美宿 © 2026</p>
+  <p>黎平瞰肇兴山水美宿 © 2026</p >
 </footer>
 
 </body>
+</html>
 </html>
